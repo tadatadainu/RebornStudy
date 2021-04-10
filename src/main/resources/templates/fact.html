@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" charset="UTF-8">
+		<title>タイトル</title>
+		</head>
+	<body>
+		<p th:text="${ans}">階乗の計算をします</p>
+			
+		<form action="/fact" method="POST">
+		<label>階乗したい値を入れてください</label><input type="text" name="factVal">
+		<input type="submit", value="送信">
+		</form>
+	</body>
+</html>
